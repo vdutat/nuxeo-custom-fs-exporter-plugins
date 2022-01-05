@@ -1,0 +1,8 @@
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Manifest-Version: 1.0
+Bundle-Vendor: com.acme.nuxeo.fsexporter
+Bundle-Version: 1.0.0
+Bundle-Name: nuxeo-custom-fs-exporter-plugins-core
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.acme.nuxeo.fsexporter.nuxeo-custom-fs-exporter-plugins-core;singleton=true

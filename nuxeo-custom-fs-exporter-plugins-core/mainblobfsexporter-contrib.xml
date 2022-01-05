@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<component name="com.acme.nuxeo.fsexporter.mainblobfsexporter">
+
+  <require>org.nuxeo.io.fsexporter.contrib</require>
+
+  <extension target="org.nuxeo.io.fsexporter.FSExporter" point="exportLogic">
+
+    <exportLogic class="com.acme.nuxeo.fsexporter.MainBlobExporterPlugin" />
+
+  </extension>
+
+</component>
