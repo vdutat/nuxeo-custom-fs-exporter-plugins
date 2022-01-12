@@ -4,12 +4,12 @@
   <parent>
     <groupId>org.nuxeo.ecm.distribution</groupId>
     <artifactId>nuxeo-distribution</artifactId>
-    <version>10.10</version>
+    <version>10.10-HF56</version>
   </parent>
 
   <groupId>com.acme.nuxeo.fsexporter</groupId>
   <artifactId>nuxeo-custom-fs-exporter-plugins-parent</artifactId>
-  <version>1.0</version>
+  <version>1.1.0</version>
   <name>Nuxeo custom fs exporter plugins parent</name>
   <description />
   <packaging>pom</packaging>
@@ -81,6 +81,35 @@
         <enabled>true</enabled>
       </snapshots>
     </repository>
+  <!-- Hotfix Repositories -->
+  <repository>
+    <id>hotfix-releases</id>
+    <!--
+    <url>https://maven-us.nuxeo.org/nexus/content/repositories/hotfix-releases-packages</url>
+    -->
+    <url>https://packages.nuxeo.com/repository/maven-hotfix-releases/</url>
+
+    <releases>
+      <enabled>true</enabled>
+    </releases>
+    <snapshots>
+      <enabled>false</enabled>
+    </snapshots>
+  </repository>
+  <repository>
+    <id>hotfix-snapshots</id>
+    <!--
+    <url>https://maven-us.nuxeo.org/nexus/content/repositories/hotfix-snapshots</url>
+    -->
+    <url>https://packages.nuxeo.com/repository/maven-hotfix-archives</url>
+    <releases>
+      <enabled>false</enabled>
+    </releases>
+    <snapshots>
+      <updatePolicy>always</updatePolicy>
+      <enabled>true</enabled>
+    </snapshots>
+  </repository>
   </repositories>
 
   <pluginRepositories>

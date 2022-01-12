@@ -1,25 +1,40 @@
 <?xml version="1.0"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="http://maven.apache.org/POM/4.0.0"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.acme.nuxeo.fsexporter</groupId>
     <artifactId>nuxeo-custom-fs-exporter-plugins-parent</artifactId>
-    <version>1.0</version>
+    <version>1.1.0</version>
   </parent>
   <artifactId>nuxeo-custom-fs-exporter-plugins-core</artifactId>
   <name>Nuxeo custom fs exporter plugins core</name>
-  <description></description>
+  <description />
 
   <dependencies>
-  	<dependency>
-  		<groupId>org.nuxeo.io</groupId>
-  		<artifactId>nuxeo-fsexporter</artifactId>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.nuxeo.ecm.platform</groupId>
-  		<artifactId>nuxeo-platform-collections-core</artifactId>
-  	</dependency>
+    <dependency>
+      <groupId>org.nuxeo.io</groupId>
+      <artifactId>nuxeo-fsexporter</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.nuxeo.ecm.platform</groupId>
+      <artifactId>nuxeo-platform-collections-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.nuxeo.ecm.core</groupId>
+      <artifactId>nuxeo-core-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.nuxeo.ecm.core</groupId>
+      <artifactId>nuxeo-core-bulk</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.nuxeo.lib.stream</groupId>
+      <artifactId>nuxeo-stream</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.nuxeo.ecm.core</groupId>
+      <artifactId>nuxeo-core-test</artifactId>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 </project>
